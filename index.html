@@ -140,8 +140,8 @@
                     </li>
                     
                     <li>
-                      <a href="#resumeLink" style="color: black;">
-                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><strong>  Download my resume here</strong>
+                      <a href="https://drive.google.com/file/d/14_YPQs0RR8CGlCzzaDEeIrpfO-SmPeof/view?usp=sharing" style="color: black;" download="Resume_JosieHan.pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i><strong>  Download my resume here</strong>
                       </a>
                     </li>
                   
@@ -264,12 +264,10 @@
           </div>
           
           <div class="tab-pane fade clearfix" role="tabpanel" id="skills">
-            <h3>
-              Technical skills
-            </h3>
             <div class="row row-content">
-              <img src="/images/carousel_bg.png" class="col-4">
-              <div class="col-8">
+              <img src="/images/carousel_bg.png" class="col-5 offset-1">
+              <div class="col-5 mr-1">
+                <h3>Technical skills</h3>
                 <ul>
                   <li><strong>Languages:</strong> Java, JavaScript, HTML5, CSS, Python, Sass, JQuery, Node.js</li>
                   <li><strong>Computer Systems:</strong> Mac OS</li>
@@ -280,37 +278,43 @@
               </div>
             </div>
             
-            <h3>Other skills</h3>
+        
             <div class="row row-content">
-              <div class="col-9 row">
-                <ul class="col-6">
-                  <li>Customer service</li>
-                  <li>Creative problem solving</li>
-                  <li>Interpersonal communication</li>
-                  <li>Documentation</li>
-                  <li>High level proficiency in English and Chinese</li>  
+              <div class="col-5 offset-1">
+                <ul class="list-unstyled">
+                  <h3>Other skills</h3>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Creative problem solving</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Ability to work in a team</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Interpersonal communication and Emotional intelligence</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Planning, organization and documentation</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Adaptability and flexibility</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  Work ethic</li>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i>  High level proficiency in English and Chinese</li>  
                 </ul>
-                <img class="col-6" src="/images/softskill.png">
               </div>
+              <img class="col-5 mr-1" src="/images/softskill.png">
 
-              <div class="col-4">
-                
-              </div>
+              
             </div>
-            <div class="g2">
+            <div class="container">
+            <div class="row">
+              <div class="col-10 offset-1">
               <h3>
                 Hobbies
-              </h3>
+              </h3><br>
               <span class="label label-info">Yoga</span>
               <span class="label label-info">Jogging</span>
               <span class="label label-info">Hiking</span>
               <span class="label label-info">Computer Games</span>
             </div>
           </div>
+          </div>
+
+          </div>
 
 
 
-          <div class="tab-pane" role="tabpanel" id="contact">
+          <div class="tab-pane fade" role="tabpanel" id="contact">
             
             <footer class="footer">
               <div class="container">
@@ -360,129 +364,135 @@
           </footer>
           </div>
           
-        </div>
+          <div class="tab-pane fade" role="tabpanel" id="projects">
+            <div id="accordion">
+              <div class="card">
 
-          <!-- End skills Tab Data -->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- Projects Tab Data -->
-          <div id="portfolio">
-            <section class="clearfix">
-              <div class="project-section">
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper1').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Amazon Alexa-based Social bot</p>
+                <div class="card-header bg-success text-white" role="tab" id="alexaheader">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-target="#alexa">Amazon Alexa-based Social bot</a>
+                  </h5>
                 </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper2').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
+                <div role="tabpanel" class="collapse show" id="alexa" data-parent="#accordion">
+                  <div class="card-body row">
+                    <h4 class="row col-10 offset-1">Project Details</h4><br>
+                    <div class="row col-10 offset-1">
+                    <strong class="col-12 col-sm-3">Project description: <br></strong>
+                    <p class="col-12 col-sm-9">Developing an Alexa-based social bot that can converse coherently and engagingly with humans on popular topics, news and events.</p>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Language used: </strong><span class="col-auto">Python</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Skill sets: </strong><span class="col-auto">Natural Language Processing</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Main responsibilities: <br></strong>
+                        <ul class="col-12 col-sm-9">
+                          <li>Working within a development group of 6 people and holding weekly meeting to report progress</li>
+                          <li>Training data collection, cleaning and analyzing</li>
+                          <li>Natural language understanding module which is responsible for understanding user utterance and identifying user’s intention as well as sentiment</li>
+                          <li>Drafting final report</li>
+                        </ul>
+                    
+                      </div>               
                   </div>
-                  <p class="project-title">EatHealth software front end usability project</p>
                 </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper3').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Android-based facility finding mobile-phone software</p>
+
+                <div class="card-header bg-success text-white" role="tab" id="pizzaheader">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-target="#pizza">Restaurant website development project</a>
+                  </h5>
                 </div>
-               
+
+                <div role="tabpanel" class="collapse" id="pizza" data-parent="#accordion">
+                  <div class="card-body row">
+                    <h4 class="row col-10 offset-1">Project Details</h4><br>
+                    <div class="row col-10 offset-1">
+                    <strong class="col-12 col-sm-3">Project description: <br></strong>
+                    <p class="col-12 col-sm-9">It is a full-stack web development project which can help to boost sales through creative and strategic pizza website design.</p>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Language used: </strong><span class="col-auto">HTML5, JavaScript, CSS, SASS, JQuery</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Front-end Framework: </strong><span class="col-auto">Bootstrap</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Main responsibilities: <br></strong>
+                        <ul class="col-12 col-sm-9">
+                          <li>Gathering information and analyzing purpose, main goal and target audience</li>
+                          <li>Developing sitemap and creating wireframe</li>
+                          <li>Content writing and assembly</li>
+                          <li>Responsive design of the front page</li>
+                          <li>Drafting final report</li>
+                        </ul>
+                    
+                      </div>               
+                  </div>
+                </div>
+
+                <div class="card-header bg-success text-white" role="tab" id="eathealthheader">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-target="#eathealth">EatHealth software front end usability project</a>
+                  </h5>
+                </div>
+
+                <div role="tabpanel" class="collapse" id="eathealth" data-parent="#accordion">
+                  <div class="card-body row">
+                    <h4 class="row col-10 offset-1">Project Details</h4><br>
+                    <div class="row col-10 offset-1">
+                    <strong class="col-12 col-sm-3">Project description: <br></strong>
+                    <p class="col-12 col-sm-9">In this project, we need to examine and model the usability of website page. Expected to increase the user base by 6% within one year.</p>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Skill set: </strong><span class="col-auto">Evaluation tools such as Think-aloud and SSCW</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Main responsibilities: <br></strong>
+                        <ul class="col-12 col-sm-9">
+                          <li>Evaluation process design</li>
+                          <li>Working with volunteers from different background to run the evaluation</li>
+                          <li>Recording the evaluation process and analyzing collected data</li>
+                          <li>Making a new prototype plan and drafting final report</li>
+                        </ul>
+                      </div>               
+                  </div>
+                </div>
+
+                <div class="card-header bg-success text-white" role="tab" id="androidheader">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-target="#android">Android-based facility finding mobile-phone software</a>
+                  </h5>
+                </div>
+                <div role="tabpanel" class="collapse" id="android" data-parent="#accordion">
+                  <div class="card-body row">
+                    <h4 class="row col-10 offset-1">Project Details</h4><br>
+                    <div class="row col-10 offset-1">
+                    <strong class="col-12 col-sm-3">Project description: <br></strong>
+                    <p class="col-12 col-sm-9">Baidu map based mobile phone application development. The Android mobile phone application provides searching, marking and AI real-time navigation.</p>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Language used: </strong><span class="col-auto">Java</span>
+                    </div>
+                    <div class="row col-10 offset-1">
+                      <strong class="col-12 col-sm-3">Main responsibilities: <br></strong>
+                        <ul class="col-12 col-sm-9">
+                          <li>Communication with potential users and collecting users’ requirements</li>
+                          <li>Using approach of agile development to implement users’ requirements</li>
+                          <li>Mainly responsible for frontend construction</li>
+                          <li>System testing</li>
+                        </ul>
+                    
+                      </div>               
+                  </div>
+                </div>
+
               </div>
-              <div id="modal-wrapper1" class="modal">
-
-                <form class="modal-content animate">
-
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                    <img src="images/play2.jpg" alt="project" class="avatar">
-                    <h1 class="project_details" style="text-align:center">Project Details</h1>
-                  </div>
-
-                  <div class="container">
-                  <!-- <input type="text" placeholder="Project Name" name="uname" readonly>
-                    <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
-                    <input type="url" placeholder="Project Link"readonly>
-                    <input type="text" placeholder="Languages used" readonly>
-                    <button class="project_submit" type="submit">Submit</button> --> 
-                   <br>
-                   <b>Project description</b><br><br>
-                   <p>Developing an Alexa-based social bot that can converse coherently and engagingly with humans on popular topics, news and events.</p>
-        
-                   <b>Language used:</b> Python<br><br>
-                   <b>Skill sets:</b> Natural Language Processing<br>
-          
-                  </div>
-
-                </form>
-
-              </div>
-            
-              <div id="modal-wrapper2" class="modal">
-
-                <form class="modal-content animate">
-
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                    <img src="images/play2.jpg" alt="project" class="avatar">
-                    <h1 class="project_details" style="text-align:center">Project Details</h1>
-                  </div>
-
-                  <div class="container">
-                  <!-- <input type="text" placeholder="Project Name" name="uname" readonly>
-                    <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
-                    <input type="url" placeholder="Project Link"readonly>
-                    <input type="text" placeholder="Languages used" readonly>
-                    <button class="project_submit" type="submit">Submit</button> --> 
-                   <br>
-                   <b>Project description</b><br><br>
-                   <p>In this project, we need to examine and model the usability of website page. Expected to increase the user base by 6% within one year.</p>
-                   <b>Skill sets:</b> evaluation tools such as Think-aloud and SSCW<br>
-          
-                  </div>
-
-                </form>
-
-              </div>
-            
-              <div id="modal-wrapper3" class="modal">
-
-                <form class="modal-content animate">
-
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                    <img src="images/play2.jpg" alt="project" class="avatar">
-                    <h1 class="project_details" style="text-align:center">Project Details</h1>
-                  </div>
-
-                  <div class="container">
-                  <!-- <input type="text" placeholder="Project Name" name="uname" readonly>
-                    <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
-                    <input type="url" placeholder="Project Link"readonly>
-                    <input type="text" placeholder="Languages used" readonly>
-                    <button class="project_submit" type="submit">Submit</button> --> 
-                   <br>
-                   <b>Project description</b><br><br>
-                   <p>Baidu map based mobile phone application development. The Android mobile phone application provides searching, marking and AI real-time navigation.</p>
-        
-                   <b>Language used:</b> Java, JavaScript<br><br>
-                   
-          
-                  </div>
-
-                </form>
-
-              </div>
-            
-            </section>
+            </div>
           </div>
-          <!-- End Projects tab -->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- Contact Tab Data -->
-          
-          <!-- End Contact Data -->
-          <!-- ----------------------------------------------------------------------------------- -->
-        </div>
-      </div>
+
+
 </body>
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
