@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  
 
   <!-- All Link tags -->
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
@@ -21,7 +22,10 @@
   <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+ <!--   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">  specify the css classes we used -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
   <!-- All script tags -->
   <script>document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
   <script src="js/vendor/jquery.hashchange.min.js"></script>
@@ -56,30 +60,23 @@
           </h1>
         </div>
       </header>
-
+  
       <!-- Main Tab Container -->
       <div id="tab-container" class="tab-container">
 
         <!-- Tab List -->
-        <ul class='etabs'>
+        <ul class='nav nav-tabs'>
 
-          <li class='tab' id="tab-about">
-            <a href="#about">
-              <i class="icon-user"></i>
-              <span>
-                About Me
-              </span>
+          <li class='nav-item' id="tab-about">
+            <a href="#about" class="nav-link active" role="tab" data-toggle="tab" style="color: black;"><strong> About Me</strong>
             </a>
           </li>
 
-           <li class='tab'>
-            <a href="#education">
-              <i class="icon-heart"></i>
-              <span>
-                Education& Employment
-              </span>
+          <li class='nav-item' id="tab-about">
+            <a href="#educationANDemployment" class="nav-link" role="tab" data-toggle="tab" style="color: black;"><strong> Education& Employment</strong>
             </a>
           </li>
+
           
          <!--  <li class='tab'>
             <a href="#employment">
@@ -89,257 +86,281 @@
               </span>
             </a>
           </li> -->
-          
-           <li class='tab'>
-            <a href="#portfolio">
-              <i class="icon-heart"></i>
-              <span>
-                Projects
-              </span>
+          <li class='nav-item' id="tab-about">
+            <a href="#projects" class="nav-link" role="tab" data-toggle="tab" style="color: black;"><strong> Projects</strong>
             </a>
           </li>
          
-          
-          <li class='tab'>
-            <a href="#resume">
-              <i class="icon-file-text"></i>
-              <span>
-                Skills
-              </span>
+          <li class='nav-item' id="tab-about">
+            <a href="#skills" class="nav-link" role="tab" data-toggle="tab" style="color: black;"><strong> Skills</strong>
             </a>
           </li>
-          
-          <li class='tab'>
-            <a href="#contact">
-              <i class="icon-envelope"></i>
-              <span>
-                Contact
-              </span>
+
+          <li class='nav-item' id="tab-about">
+            <a href="#contact" class="nav-link" role="tab" data-toggle="tab" style="color: black;"><strong> Contact Me</strong>
             </a>
           </li>
-          
-      
-          
         </ul>
         <!-- End Tab List -->
 
         <!-- ----------------------------------------------------------------------------------- -->
         <!-- Code for differents Tabs strat from here. -->
-        <div id="tab-data-wrap">
-
-          <!-- About Tab Data -->
-          <div id="about">
-            <section class="clearfix">
-              <div class="g2">
-                <div class="photo">
-                  <img src="./images/author.jpg" alt="Your alt text">
-                </div>
-                <div class="info">
-                  <h2>
-                    <p></p>
-                    Josie Han
-                  </h2>
-                  <h4>
-                    IT Professional
-                  </h4>
-                  <p>
-                    I am a master graduate from the University of Sydney majoring in IT and IT Management, during which I have several project experiences working in an Agile environment. In addition, I have a 3-month internship with China’s largest e-tourism company C-Trip working in web development project team. This experience not only gave me professional experience, but also made me a good communicator and a good liaison between IT department and other stakeholders. I have a passion for the IT industry, and I am well prepared to a new stage in my life.
-                  </p>
-                  </p>
-                </div>
+        <div id="tab-data-wrap" class="tab-content clearfix">
+          <div role="tabpanel" class="tab-pane fade show active" id="about">
+            <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-3">
+                <img src="./images/author.jpg" alt="My profile" class="img-fluid img-thumbnail">
               </div>
-
-              <div class="g1">
+              <div class="col-12 col-sm-5">
+                <h2>
+                  Josie Han
+                </h2>
+                <h4 id="occupation">
+                  IT Professional
+                </h4>
+                <div class="break"></div>
+                <p>
+                  I am a master graduate from the University of Sydney majoring in IT and IT Management, during which I have several project experiences working in an Agile environment. <br><br>In addition, I have a 3-month internship with China’s largest e-tourism company C-Trip working in web development project team. This experience not only gave me professional experience, but also made me a good communicator and a good liaison between IT department and other stakeholders.<br><br>I have a passion for the IT industry, and I am well prepared to a new stage in my life.
+                </p>
+                </p>
+              </div>
+              <div class="g1 col-auto">
                 <div class="main-links sidebar">
                   <ul>
                     <li>
-                      <a href="#education">
+                      <a href="#educationANDemployment" style="color: black;">
                         View My Education History
                       </a>
                     </li>
                     <li>
-                      <a href="#education">
+                      <a href="#educationANDemployment"style="color: black;">
                         View My Employment Experience
                       </a>
                     </li>
                     
                     <li>
-                      <a href="#resumeLink">
-                        Download my resume here
+                      <a href="#resumeLink" style="color: black;">
+                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><strong>  Download my resume here</strong>
                       </a>
                     </li>
                   
                   </ul>
                 </div>
               </div>
-              <div class="break">
+            </div>
+            </div>
+            <div class="break"></div>
+            <div class="col-12">
+              <div class="card card-body bg-light">
+                <blockquote class="blockquote">
+                  <p class="mb-0">“The computer was born to solve problems that did not exist before.”</p>
+                  <footer class="blockquote-footer">— Bill Gates</footer>
+                </blockquote>
               </div>
-              <div class="contact-info">
-                <div class="g1">
-                  <div class="item-box clearfix">
-                    <i class="icon-envelope"></i>
-                    <div class="item-data">
-                      <h3>
-                        <a href="mailto:josie.han336@gmail.here">
-                          Josie.han336@gmail.com
-                        </a>
-                      </h3>
-                      <p>
-                        My Email Address
-                      </p>
-                    </div>
+            </div>
+            <div class="break"></div>
+            <div class="container">
+            <div class="contact-info">
+              <div class="g1">
+                <div class="item-box clearfix container">
+                  <div class="row">
+                  <a class="btn btn-social-icon" href="mailto:josie.han336@gmail.come"><i class="fa fa-envelope"></i></a>
+                  <div class="item-data">
+                    <h3>
+                      <a href="mailto:josie.han336@gmail.here" style="color: black;">
+                        Josie.han336@gmail.com
+                      </a>
+                    </h3>
+                    <p>
+                      My Email Address
+                    </p>
                   </div>
                 </div>
-                <div class="g1">
-                  <div class="item-box clearfix">
-                    <i class="icon-linkedin"></i>
-                    <div class="item-data">
-                      <h3>
-                        <a href="https://www.linkedin.com/in/josie-han-488b59199/">
-                          Click to connect with me on LinkedIn
-                        </a>
-                      </h3>
-                      <p>
-                        My LinkedIn
-                      </p>
-                    </div>
-                  </div>
                 </div>
-                
-              </div>
-            </section>
-          </div>
-          <!-- End About Tab Data -->
-          <!--Education data-->
-          <div id="education">
-            <section class="clearfix">
-              <div class="g2">
-                <h3>
-                  Education History
-                </h3>
-                <div>
-                  <b>The University of Sydney - Camperdown </b>Jul 2017 - Jun 2019<br>
-                  <p>Master of IT and IT Management- Software Engineering </p>
-                  <b>The Beijing University of Posts and Telecommunications </b>Sep 2013 - Jun 2017<br>
-                  <p>Bachelor of E-commerce</p>
-                  <b>The University of Queen Mary </b>Sep 2013 - Jun 2017<br>
-                  <p>Bachelor of E-commerce Law </p>         
-                </div>
-                <h3>
-                  Employment History
-                </h3>
-                <div>
-                  <b>Ctrip (Intern) </b>Dec 2015 - Feb 2016<br>
-                  <b>Responsibilities: </b><br>
-                  <p>•	Collecting and analyzing users’ requirements <br>
-                     •	User interface prototype design<br>
-                     •	Agile approach for website development and implementation mainly using python and JavaScript<br>
-                     •	System testing<br>
-                     •	Drafting relevant documentations and user manual<br>
-                  </p>
-                  
-                  <b>DAAO PTEStudy (English Second Language Teacher) </b>Dec 2019 - Now<br>
-                  <b>Responsibilities: </b><br>
-                  <p>•	Deliver quality teaching to adult students, whose primary language is not English and want to get a Language qualification <br>
-                     •	Maintaining and developing learning materials as required<br>
-                     •	Provide a nurturing and supportive learning environment<br>
-                  </p>
-                 </div>
-                <!-- </div> -->
-                
-                
-                <div class="break"></div>
-              </div>
-            </section>
-          </div>
-          <!--end education data-->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- skills Tab Data -->
-          <div id="resume">
-            <section class="clearfix">
-              <div class="g2">
-                <h3>
-                  Technical skills
-                </h3>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                      Languages: Java, JavaScript, HTML, Ruby
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                     Computer Systems: Windows XP/Vista/7, Linux CentOS/Ubuntu
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                      Web Servers: Apache, Tomcat
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                      Testing: System testing, system integration testing, regression testing, user acceptance testing, Selenium
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                      Computer software: Microsoft Office, MS Project, Adobe Creative Suite
-                    </span>
-                  </span>
-                </div>
-                
-                <div class="break"></div>
               </div>
 
               <div class="g1">
-                <h3>
-                 Othe Skills
-                </h3>
-                <div class="meter emerald">
-                  <span style="width: 100%">
-                    <span>
-                      Customer service
-                    </span>
-                  </span>
+                <div class="item-box clearfix container">
+                  <div class="row">
+                  <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/josie-han-488b59199/"><i class="fa fa-linkedin"></i></a>
+                  
+                  <div class="item-data"><h3><a href="https://www.linkedin.com/in/josie-han-488b59199/" style="color: black;">Connnect with me on LinkedIn</a></h3></div>
                 </div>
-                <div class="meter emerald">
-                  <span style="width: 85%">
-                    <span>
-                      Creative problem solving
-                    </span>
-                  </span>
                 </div>
-                <div class="meter emerald">
-                  <span style="width: 80%">
-                    <span>
-                      Documentation
-                    </span>
-                  </span>
+              </div>
+            </div> 
+            </div>
+          </div>
+
+          
+          
+          <!-- End About Tab Data -->
+          <!--Education data-->
+
+          <div role="tabpanel" class="tab-pane fade clearfix" id="educationANDemployment">
+          <div class="container">
+            <div class="card">
+              <div class="card-header bg-success text-white" ><h4>Education History</h4></div>
+              <div class="col-12 card-body bg-light">
+                <dl class="row">
+                  <dt class="col-8"><i class="fa fa-graduation-cap" aria-hidden="true"></i> The University of Sydney - Camperdown</dt> 
+                  <dd class="col-auto">Jul 2017 - Jun 2019</dd>
+                </dl>
+                <p>Master of IT and IT Management- Software Engineering</p>
+                <dl class="row">
+                  <dt class="col-8"><i class="fa fa-graduation-cap" aria-hidden="true"></i> The Beijing University of Posts and Telecommunications</dt>
+                  <dd class="col-auto">Sep 2013 - Jun 2017</dd>
+                </dl>
+                <p>Bachelor of Management- E-commerce</p>
+        
+                <dl class="row">
+                  <dt class="col-8"><i class="fa fa-graduation-cap" aria-hidden="true"></i> The University of Queen Mary</dt>
+                  <dd class="col-auto">Sep 2013 - Jun 2017</dd>
+                </dl>
+                <p>Bachelor of Engineer- E-commerce</p>
+
+              </div>
+            </div>
+           
+            </div>
+
+            
+            <div class="container">
+              <div class="card">
+                <div class="card-header bg-success text-white" ><h4> Employment History</h4></div>
+                <div class="col-12 card-body bg-light">
+                  <dl class="row">
+                    <dt class="col-8"><i class="fa fa-handshake-o" aria-hidden="true"></i> Ctrip (Intern) </dt> 
+                    <dd class="col-auto">Dec 2015 - Feb 2016</dd>
+                  </dl>
+                  <dl>
+                    <dt>Responsibilities: </dt>
+                    <dd><p>•	Collecting and analyzing users’ requirements <br>
+                      •	User interface prototype design<br>
+                      •	Agile approach for website development and implementation mainly using python and JavaScript<br>
+                      •	System testing<br>
+                      •	Drafting relevant documentations and user manual<br>
+                   </p></dd>
+                  </dl>
+                  <br>
+                  <dl class="row">
+                    <dt class="col-8"><i class="fa fa-handshake-o" aria-hidden="true"></i> DAAO PTEStudy (English Second Language Teacher)</dt>
+                    <dd class="col-auto">Dec 2019 - Now</dd>
+            
+                  </dl>
+                  <dl>
+                    <dt>Responsibilities: </dt>
+                    <dd><p>•	Deliver quality teaching to adult students, whose primary language is not English and want to get a Language qualification <br>
+                      •	Maintaining and developing learning materials as required<br>
+                      •	Provide a nurturing and supportive learning environment<br>
+                   </p></dd>
+                  </dl>
+
                 </div>
-               
-                
+              </div>
+             
+              </div>
+          </div>
+          
+          <div class="tab-pane fade clearfix" role="tabpanel" id="skills">
+            <h3>
+              Technical skills
+            </h3>
+            <div class="row row-content">
+              <img src="/images/carousel_bg.png" class="col-4">
+              <div class="col-8">
+                <ul>
+                  <li><strong>Languages:</strong> Java, JavaScript, HTML5, CSS, Python, Sass, JQuery, Node.js</li>
+                  <li><strong>Computer Systems:</strong> Mac OS</li>
+                  <li><strong>Web Servers:</strong> Apache, Tomcat</li>
+                  <li><strong>Testing:</strong> System testing, system integration testing, regression testing, user acceptance testing, Selenium</li>
+                  <li><strong>Computer software:</strong> Visual Studio, Anaconda, GitHub, Microsoft Office, MS Project, Adobe Creative Suite</li>
+                </ul>
+              </div>
+            </div>
+            
+            <h3>Other skills</h3>
+            <div class="row row-content">
+              <div class="col-9 row">
+                <ul class="col-6">
+                  <li>Customer service</li>
+                  <li>Creative problem solving</li>
+                  <li>Interpersonal communication</li>
+                  <li>Documentation</li>
+                  <li>High level proficiency in English and Chinese</li>  
+                </ul>
+                <img class="col-6" src="/images/softskill.png">
               </div>
 
-              <div class="g2">
-                <h3>
-                  Hobbies
-                </h3>
-                <span class="label label-info">Yoga</span>
-                <span class="label label-info">Jogging</span>
-                <span class="label label-info">Hiking</span>
-                <span class="label label-info">Computer Games</span>
+              <div class="col-4">
+                
               </div>
-            </section>
+            </div>
+            <div class="g2">
+              <h3>
+                Hobbies
+              </h3>
+              <span class="label label-info">Yoga</span>
+              <span class="label label-info">Jogging</span>
+              <span class="label label-info">Hiking</span>
+              <span class="label label-info">Computer Games</span>
+            </div>
           </div>
+
+
+
+          <div class="tab-pane" role="tabpanel" id="contact">
+            
+            <footer class="footer">
+              <div class="container">
+                  <div class="row">             
+                      <div class="col-4 offset-1 col-sm-2">
+                          <h5>Links</h5>
+                          <ul class="list-unstyled">
+                              <li><a href="#about">About Me</a></li>
+                              <li><a href="#educationANDemployment">Education</a></li>
+                              <li><a href="#educationANDemployment">Employment</a></li>
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#skills">Skill Set</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-7 col-sm-5">
+                          <h5>My Address</h5>
+                          <address>
+                        160 Grote St<br>
+                        Adelaide, SA 5000<br>
+                        Australia<br>
+                            <i class="fa fa-phone fa-lg"></i>: +61 477134813<br>
+                            <i class="fa fa-fax fa-lg"></i>: +61 477134813<br>
+                            <i class="fa fa-envelope fa-lg"></i>: 
+                            <a href="mailto:confusion@food.net">josie.han336@gmail.com</a>
+                     </address>
+                      </div>
+                      <div class="col-12 col-sm-4 align-self-center">
+                          <div class="text-center">
+    
+                              <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/han.chrys.9"><i class="fa fa-facebook"></i></a>
+                              <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/josie-han-488b59199/"><i class="fa fa-linkedin"></i></a>
+                              <button class="btn btn-social-icon btn-twitter" href="http://twitter.com/" data-toggle="tooltip" data-html="true" title="@JOJO44347396" data-placement="bottom"><i class="fa fa-twitter"></i></button>
+                              <a class="btn btn-social-icon btn-google" href="http://youtube.com/" style="color: black;"><i class="fa fa-youtube"></i></a>
+                              <a class="btn btn-social-icon" href="mailto:josie.han336@gmail.com" data-toggle="tooltip" data-html="true" title="I am really easy going and feel free to contact me!"><i class="fa fa-envelope-o"></i></a>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="row justify-content-center">             
+                      <div class="col-auto">
+                        <br>
+      
+                          <p>© Copyright 2020 Josie Han</p>
+                      </div>
+                 </div>
+              </div>
+          </footer>
+          </div>
+          
+        </div>
 
           <!-- End skills Tab Data -->
           <!-- ----------------------------------------------------------------------------------- -->
@@ -457,61 +478,18 @@
           <!-- End Projects tab -->
           <!-- ----------------------------------------------------------------------------------- -->
           <!-- Contact Tab Data -->
-          <div id="contact">
-            <section class="clearfix">
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-globe"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      Address
-                    </h4>
-                    <p>
-                      Grote St Adelaide SA Australia 5000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-phone"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      E-mail
-                    </h4>
-                    <p>
-                      Josie.han336@gmail.com
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-user"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      Telephone Number
-                    </h4>
-                    <p>
-                      0477134813<br>
-                      I am really easy going and feel free to contact me!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="break"></div>
-            </section>
-          </div>
+          
           <!-- End Contact Data -->
           <!-- ----------------------------------------------------------------------------------- -->
         </div>
       </div>
 </body>
-
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+</script>
 </html>

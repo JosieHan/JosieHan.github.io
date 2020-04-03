@@ -8,7 +8,9 @@
   margin: 0;
   padding: 0;
 }
-
+#occupation{
+  color: #4CAF50;
+}
 /* HTML5 DECLARATIONS */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
   display: block
@@ -487,7 +489,10 @@ body {
 #header h4 {
   margin-bottom: 0px;
 }
-
+.nav-item{
+  background-color: #ccc;
+  color: #000;
+}
 #header .visible {
   opacity: 1;
 }
